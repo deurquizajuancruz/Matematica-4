@@ -5,13 +5,13 @@ x_average = sum(x_numbers) / len(x_numbers)
 y_average = sum(y_numbers) / len(y_numbers)
 
 total_sum = 0
-divisor = 0
+divider = 0
 for i in range(0, len(x_numbers)):
     x_difference = x_numbers[i] - x_average
     total_sum += (x_difference) * (y_numbers[i] - y_average)
-    divisor += pow(x_difference, 2)
+    divider += pow(x_difference, 2)
 
-b1 = total_sum / divisor
+b1 = total_sum / divider
 b0 = y_average - (b1 * x_average)
 
 print("INCISO A:")
