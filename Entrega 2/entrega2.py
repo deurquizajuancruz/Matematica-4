@@ -6,7 +6,7 @@ mapping: dict = {i: letters[i] for i in range(len(letters))}
 result: str = ""
 for number in decipher:
     c_powered: int = pow(number, d)
-    m:int = c_powered % r
+    m: int = c_powered % r
     result += mapping[m]
 
 print(result)
